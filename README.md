@@ -128,7 +128,7 @@ ethsec@36ba204276db:/code$ echidna-test TestEchidna4.sol   --contract TestAssert
 
 当输入10的时候，会出现失败。
 
-![image](./4.10.png)
+![image](./img/4.shi.png)
 
 
 - 测试绝对数函数
@@ -140,7 +140,7 @@ ethsec@36ba204276db:/code$ echidna-test TestEchidna4.sol   --contract TestAssert
 ethsec@36ba204276db:/code$ echidna-test TestEchidna4.sol   --contract TestAssert --check-asserts
 
 ```
-![image](./5.abs.png)
+![image](./img/5.abs.png)
 
 - 测试时间戳block.timestamp
 
@@ -151,13 +151,13 @@ ethsec@36ba204276db:/code$ echidna-test TestEchidna4.sol   --contract TestAssert
 ethsec@36ba204276db:/code$ echidna-test TestEchidnaTestTimeAndCaller.sol  --test-limit 5000 
 
 ```
-![image](./6.time.png)
+![image](./img/6.time.png)
 
 当修改源码为 
 ```
    uint delay =70 days;
 ```
-![image](./7.times.png)
+![image](./img/7.times.png)
 
 说明Echidna无法快进70天，因此没有修改pass的状态。
 
@@ -166,5 +166,5 @@ ethsec@36ba204276db:/code$ echidna-test TestEchidnaTestTimeAndCaller.sol  --test
 ```
 ethsec@36ba204276db:/code$ echidna-test TestEchidnaTestTimeAndCaller.sol  --test-limit 5000 --config time.yaml 
 ```
-![image](./8.timestamp.png)
+![image](./img/8.timestamp.png)
 
